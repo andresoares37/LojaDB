@@ -11,9 +11,9 @@ namespace Alura.Loja.Testes.ConsoleApp
         static void Main(string[] args)
         {
             //GravarUsandoAdoNet();
-<<<<<<< HEAD
+
             //GravarUsandoEntity();
-=======
+
             // GravarUsandoEntity();
             //RecuperarProdutos();
             //ExcluirProdutos();
@@ -25,7 +25,7 @@ namespace Alura.Loja.Testes.ConsoleApp
         {
             //incluir produto
             GravarUsandoEntity();
->>>>>>> fc0c46de8a191bae2ff937b37e625c23767b539e
+
             RecuperarProdutos();
 
             //alterar produto
@@ -40,21 +40,21 @@ namespace Alura.Loja.Testes.ConsoleApp
             AtualizarProdutos();
         }
 
-        private static void AtualizarProdutos()
-        {
-            //incluir produto
-            GravarUsandoEntity();
-            RecuperarProdutos();
+        //private static void AtualizarProdutos()
+        //{
+        //    //incluir produto
+        //    GravarUsandoEntity();
+        //    RecuperarProdutos();
 
-            //alterar produto
-            using (var repo = new ProdutoDAOEntity())
-            {
-                Produto primeiro = repo.Produtos().First();
-                primeiro.Nome = "Harry Potter e a Ordem da Fênix - Editado";
-                repo.Atualizar(primeiro);
-            }
-            RecuperarProdutos();
-        }
+        //    //alterar produto
+        //    using (var repo = new ProdutoDAOEntity())
+        //    {
+        //        Produto primeiro = repo.Produtos().First();
+        //        primeiro.Nome = "Harry Potter e a Ordem da Fênix - Editado";
+        //        repo.Atualizar(primeiro);
+        //    }
+        //    RecuperarProdutos();
+        //}
 
         private static void ExcluirProdutos()
         {
@@ -103,7 +103,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             {
                 repo.Adicionar(p1);
                 repo.Adicionar(p2);
-                repo.Adicionar(p3);                
+                repo.Adicionar(p3);
             }
         }
 
